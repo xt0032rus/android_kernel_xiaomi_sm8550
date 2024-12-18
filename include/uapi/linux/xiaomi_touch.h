@@ -11,10 +11,8 @@
  * @TOUCH_MODE_SINGLETAP_GESTURE: Enables or disables the single-tap gesture.
  * @TOUCH_MODE_DOUBLETAP_GESTURE: Enables or disables the double-tap gesture.
  * @TOUCH_MODE_FOD_PRESS_GESTURE: Enables or disabled the fingerprint-on-display press gesture.
- * @TOUCH_MODE_FOD_FINGER_STATE: Sysfs node that just reports what it gets told from userspace.
  * @TOUCH_MODE_NONUI_MODE: Disables or enables currently enabled gestures.
  * @TOUCH_MODE_REPORT_RATE: Configures the touchscreen sampling rate.
- * @TOUCH_MODE_FOLD_STATUS: Informs the xiaomi touch driver about current fold status.
  * @TOUCH_MODE_NUM: Represents the total number of supported modes.
  *
  * This enumeration is used to identify modes when configuring or querying
@@ -24,10 +22,8 @@ enum touch_mode {
 	TOUCH_MODE_SINGLETAP_GESTURE,
 	TOUCH_MODE_DOUBLETAP_GESTURE,
 	TOUCH_MODE_FOD_PRESS_GESTURE,
-	TOUCH_MODE_FOD_FINGER_STATE,
 	TOUCH_MODE_NONUI_MODE,
 	TOUCH_MODE_REPORT_RATE,
-	TOUCH_MODE_FOLD_STATUS,
 	TOUCH_MODE_NUM,
 };
 
@@ -55,19 +51,6 @@ enum touch_mode_cmd {
 struct touch_mode_request {
 	enum touch_mode mode;
 	int value;
-};
-
-/**
- * enum touch_fold_status: - Represents the fold status.
- * @TOUCH_FOLD_STATUS_UNFOLDED: Fold status where the primary touchscreen is active.
- * @TOUCH_FOLD_STATUS_FOLDED: Fold status where the secondary touchscreen is active.
- *
- * These are the supported values for TOUCH_MODE_FOLD_STATUS requests.
- */
-enum touch_fold_status {
-	TOUCH_FOLD_STATUS_UNFOLDED,
-	TOUCH_FOLD_STATUS_FOLDED,
-	TOUCH_FOLD_STATUS_NUM,
 };
 
 /*
