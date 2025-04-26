@@ -1368,6 +1368,4 @@ config TOUCHSCREEN_ZINITIX
 
 source "drivers/input/touchscreen/xiaomi/Kconfig"
 
-source "drivers/input/touchscreen/goodix_berlin_driver/Kconfig"
-
 endif
