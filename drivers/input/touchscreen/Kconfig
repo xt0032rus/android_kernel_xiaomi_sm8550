@@ -1366,8 +1366,6 @@ config TOUCHSCREEN_ZINITIX
 	  To compile this driver as a module, choose M here: the
 	  module will be called zinitix.
 
-source "drivers/input/touchscreen/fts_spi/Kconfig"
-
 source "drivers/input/touchscreen/xiaomi/Kconfig"
 
 source "drivers/input/touchscreen/goodix_berlin_driver/Kconfig"
