@@ -15,6 +15,7 @@
  * @TOUCH_MODE_NONUI_MODE: Disables or enables currently enabled gestures.
  * @TOUCH_MODE_REPORT_RATE: Configures the touchscreen sampling rate.
  * @TOUCH_MODE_ORIENTATION: Informs the xiaomi touch driver about current orientation.
+ * @TOUCH_MODE_GRIP_REJECTION: Enables and disabled Edge Rejection.
  * @TOUCH_MODE_FOLD_STATUS: Informs the xiaomi touch driver about current fold status.
  * @TOUCH_MODE_NUM: Represents the total number of supported modes.
  *
@@ -29,6 +30,7 @@ enum touch_mode {
 	TOUCH_MODE_NONUI_MODE,
 	TOUCH_MODE_REPORT_RATE,
 	TOUCH_MODE_ORIENTATION,
+	TOUCH_MODE_GRIP_REJECTION,
 	TOUCH_MODE_FOLD_STATUS,
 	TOUCH_MODE_NUM,
 };
