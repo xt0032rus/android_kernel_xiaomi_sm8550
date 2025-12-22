@@ -1603,10 +1603,17 @@ retry:
 			found_sus_path = true;
 			goto retry;
 		}
+<<<<<<< ours
 		return dentry;
 	}
 #else
 		return dentry;
+=======
+		return dentry;
+	}
+#else
+		return dentry;
+>>>>>>> theirs
 #endif
 
 	/* Don't create child dentry for a dead directory. */
